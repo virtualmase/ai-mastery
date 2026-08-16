@@ -1,0 +1,7 @@
+.DS_Store
+Thumbs.db
+*.log
+.lighthouseci/
+node_modules/
+dist/
+C:\\Users\\*/

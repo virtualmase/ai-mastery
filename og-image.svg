@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs><pattern id="g" width="48" height="48" patternUnits="userSpaceOnUse"><path d="M48 0H0V48" fill="none" stroke="#1d302a"/></pattern><radialGradient id="r"><stop stop-color="#183d32"/><stop offset="1" stop-color="#07100e"/></radialGradient></defs>
+  <rect width="1200" height="630" fill="url(#r)"/><rect width="1200" height="630" fill="url(#g)" opacity=".75"/>
+  <g transform="translate(930 315)" fill="none" stroke="#3c5f53"><circle r="180"/><circle r="125" stroke-dasharray="5 8"/><circle r="68"/></g>
+  <circle cx="930" cy="315" r="46" fill="#0c1d18" stroke="#6f8a80"/><text x="930" y="329" text-anchor="middle" fill="#c8fa58" font-family="Arial" font-size="40">AM</text>
+  <circle cx="930" cy="135" r="6" fill="#67e8ca"/><circle cx="1055" cy="405" r="6" fill="#c8fa58"/><circle cx="805" cy="405" r="6" fill="#c8fa58"/>
+  <text x="70" y="90" fill="#8fa099" font-family="monospace" font-size="15" letter-spacing="3">AI MASTERY / MASON NGUYEN</text>
+  <text x="70" y="270" fill="#f5f7f1" font-family="Arial" font-size="89" letter-spacing="-5">The architecture</text>
+  <text x="70" y="365" fill="#c8fa58" font-family="Arial" font-size="89" letter-spacing="-5">of intelligence.</text>
+  <text x="73" y="445" fill="#97a9a2" font-family="Arial" font-size="22">Knowledge systems · Agentic computing · AI infrastructure · Digital trust</text>
+  <path d="M72 520H560" stroke="#3e544c"/><text x="72" y="550" fill="#6f827a" font-family="monospace" font-size="13" letter-spacing="2">UNDERSTAND INTELLIGENCE. ENGINEER WHAT COMES NEXT.</text>
+</svg>

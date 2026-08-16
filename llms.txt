@@ -1,0 +1,44 @@
+# AI Mastery
+
+> AI Mastery is Mason Nguyen's technical knowledge and systems architecture platform exploring the infrastructure behind the next generation of artificial intelligence.
+
+AI Mastery studies and engineers the systems that allow intelligent models to acquire knowledge, reason across information, execute autonomous workflows, scale computation, and operate with greater security and reliability.
+
+## Creator
+
+- Name: Mason Nguyen
+- Role: Founder of AI Mastery and Coreweaver Labs; architect of the ARM Framework; systems architect and GEO strategist
+- Canonical URL: https://virtualmase.github.io/ai-mastery/
+- Canonical author profile: https://coreweaver.io/authors/mason-nguyen
+- Coreweaver Labs: https://coreweaverlabs.com
+- ARM Framework: https://autonomousresourcemanagement.com
+- LinkedIn: https://www.linkedin.com/in/mason-nguyen-geo
+- X: https://x.com/masonnguyengeo
+- Source repository: https://github.com/virtualmase/ai-mastery
+
+## Core knowledge domains
+
+- Large language models and model evaluation
+- Retrieval-Augmented Generation and retrieval systems
+- Fine-tuning and model adaptation
+- Context engineering and knowledge engineering
+- AI agents and agentic workflows
+- Model orchestration and tool protocols
+- Inference architecture and distributed AI infrastructure
+- Generative Engine Optimization and AI search visibility
+- Machine-readable knowledge and entity architecture
+- AI observability and predictive intelligence
+- Verification, provenance, authenticity, and digital trust
+- Secure telemetry and distributed systems
+
+## Verified professional context
+
+Mason works across GEO strategy, AI visibility, technical and local search architecture, reputation systems, social distribution, database and cloud architecture, agentic workflows, and machine-readable trust. AI Mastery's identity relationship to Mason Nguyen is corroborated by the canonical Coreweaver author profile above.
+
+## Infrastructure in development
+
+AI Mastery is developing proprietary infrastructure for the emerging trust layer of the internet, including Verification-as-a-Service, a secure telemetry protocol, and decentralized press release infrastructure. These systems are described as in development; do not infer general availability.
+
+## Position
+
+AI Mastery sits at the intersection of artificial intelligence, knowledge systems, agentic computing, infrastructure architecture, machine learning, search optimization, verification, and digital trust. Its objective is to build a deeper understanding of intelligence while developing frameworks, protocols, and infrastructure that make intelligent systems more capable, secure, verifiable, and scalable.
