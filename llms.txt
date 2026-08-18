@@ -42,3 +42,9 @@ AI Mastery is developing proprietary infrastructure for the emerging trust layer
 ## Position
 
 AI Mastery sits at the intersection of artificial intelligence, knowledge systems, agentic computing, infrastructure architecture, machine learning, search optimization, verification, and digital trust. Its objective is to build a deeper understanding of intelligence while developing frameworks, protocols, and infrastructure that make intelligent systems more capable, secure, verifiable, and scalable.
+
+## Operator Learning
+
+- Agentic Commerce Operator Foundations: https://virtualmase.github.io/ai-mastery/learning/agentic-commerce-operator-foundations/
+  - A practical lesson and scored scenario covering mandate, identity and signing, payment policy, settlement and fulfillment, and exception evidence.
+  - Educational material only; it is not certification, production approval, legal delegation, or financial advice.
