@@ -48,3 +48,17 @@ AI Mastery sits at the intersection of artificial intelligence, knowledge system
 - Agentic Commerce Operator Foundations: https://virtualmase.github.io/ai-mastery/learning/agentic-commerce-operator-foundations/
   - A practical lesson and scored scenario covering mandate, identity and signing, payment policy, settlement and fulfillment, and exception evidence.
   - Educational material only; it is not certification, production approval, legal delegation, or financial advice.
+- Agent Identity & Signing: https://virtualmase.github.io/ai-mastery/learning/agent-identity-and-signing/
+- Agent Payment Policy Enforcement: https://virtualmase.github.io/ai-mastery/learning/agent-payment-policy-enforcement/
+- Agent Settlement vs. Fulfillment: https://virtualmase.github.io/ai-mastery/learning/agent-settlement-vs-fulfillment/
+- Agent Exception Handling: https://virtualmase.github.io/ai-mastery/learning/agent-exception-handling/
+
+## GEO Learning
+
+- GEO Entity Foundations: https://virtualmase.github.io/ai-mastery/learning/geo-entity-foundations/
+  - A practical lesson and scored scenario covering entity resolution, structured data, retrieval surface, attribution, and currency.
+  - Educational material only; it is not a guarantee of ranking, citation, or inclusion in any specific engine output.
+- GEO Structured Data Implementation: https://virtualmase.github.io/ai-mastery/learning/geo-structured-data-implementation/
+- GEO Retrieval Surface: https://virtualmase.github.io/ai-mastery/learning/geo-retrieval-surface/
+- GEO Source Attribution: https://virtualmase.github.io/ai-mastery/learning/geo-source-attribution/
+- GEO Currency & Decay: https://virtualmase.github.io/ai-mastery/learning/geo-currency-and-decay/

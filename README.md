@@ -20,9 +20,15 @@ The site is a zero-dependency static document and can be served from GitHub Page
 
 - Semantic HTML and responsive CSS
 - JSON-LD for Mason Nguyen, AI Mastery, and the website
+- LearningResource JSON-LD for the operator and GEO learning pages
 - Open Graph and Twitter card metadata
 - `robots.txt`, `sitemap.xml`, and `llms.txt`
 - Reduced-motion support and keyboard-accessible navigation
+
+## Learning paths
+
+- Operator foundations: mandate, identity and signing, payment policy, settlement versus fulfillment, and exception handling
+- GEO foundations: entity clarity, structured data, retrieval surface, source attribution, and currency decay
 
 ## Identity source
 
