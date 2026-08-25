@@ -284,16 +284,20 @@ section { scroll-margin-top: 84px; }
 .mason-fields { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 34px; }
 .mason-fields span { padding: 7px 9px; border: 1px solid #b1b7ae; color: #67726d; font: 7px var(--mono); letter-spacing: .08em; }
 .credentials { margin-top: 90px; }
-.credentials > p { display: flex; justify-content: space-between; gap: 20px; margin: 0 0 14px; color: #66716c; font: 8px/1 var(--mono); letter-spacing: .12em; }
-.credentials > p span { color: #89928d; font-size: 7px; }
+.credentials-heading { display: grid; grid-template-columns: 220px 1fr; gap: 60px; align-items: end; padding-bottom: 34px; }
+.credentials-heading > p { margin: 0 0 5px; color: #66716c; font: 8px/1 var(--mono); letter-spacing: .12em; }
+.credentials-heading > div { display: grid; grid-template-columns: minmax(260px, .8fr) minmax(300px, .55fr); gap: 50px; align-items: end; }
+.credentials-heading h3 { margin: 0; font: 400 clamp(38px, 4vw, 58px)/.95 var(--display); letter-spacing: -.05em; }
+.credentials-heading div p { max-width: 470px; margin: 0 0 3px; color: #65706b; font-size: 11px; line-height: 1.7; }
 .credential-list { display: grid; grid-template-columns: repeat(4, 1fr); border-top: 1px solid #b4b9b0; border-left: 1px solid #b4b9b0; }
-.credential-list a { min-width: 0; min-height: 340px; display: flex; flex-direction: column; padding: 13px; border-right: 1px solid #b4b9b0; border-bottom: 1px solid #b4b9b0; color: #26332e; text-decoration: none; transition: background .18s ease; }
+.credential-list a { min-width: 0; min-height: 390px; display: flex; flex-direction: column; padding: 14px; border-right: 1px solid #b4b9b0; border-bottom: 1px solid #b4b9b0; color: #26332e; text-decoration: none; transition: background .18s ease; }
 .credential-list a:hover { background: rgba(245,247,241,.65); }
 .credential-list img { width: 100%; aspect-ratio: 16 / 9; object-fit: contain; padding: 8px; border: 1px solid #c7cbc3; background: #f7f7f3; }
-.credential-list small { color: #77817c; font: 7px/1.2 var(--mono); letter-spacing: .08em; }
-.credential-list img + small { margin-top: 17px; }
-.credential-list strong { max-width: 330px; margin-top: 12px; font: 500 15px/1.2 var(--display); }
-.credential-list a > span { display: flex; justify-content: space-between; gap: 15px; margin-top: auto; padding-top: 15px; color: #6d7873; font-size: 8px; }
+.credential-list small { margin-top: 19px; color: #77817c; font: 7px/1.3 var(--mono); letter-spacing: .08em; }
+.credential-list strong { max-width: 330px; margin-top: 12px; font: 500 18px/1.14 var(--display); }
+.credential-type { margin-top: 9px; color: #6d7873; font-size: 9px; }
+.credential-action { display: flex; justify-content: space-between; align-items: center; gap: 15px; margin-top: auto; padding-top: 15px; border-top: 1px solid #c7cbc3; color: #3d654f; font-size: 9px; font-weight: 750; }
+.credential-list a:hover .credential-action { color: #245a3c; }
 .credential-list b { color: #487058; font: 400 11px/1 var(--mono); }
 .identity-network { margin-top: 32px; padding-top: 24px; border-top: 1px solid #b4b9b0; }
 .identity-network > p { margin: 0 0 14px; color: #66716c; font: 8px/1 var(--mono); letter-spacing: .12em; }
@@ -336,6 +340,8 @@ section { scroll-margin-top: 84px; }
   .systems-in-development { grid-template-columns: 1fr 1fr; }
   .machine-web { gap: 60px; }
   .mason-panel { gap: 60px; }
+  .credentials-heading { grid-template-columns: 170px 1fr; gap: 35px; }
+  .credentials-heading > div { grid-template-columns: 1fr; gap: 18px; }
   .credential-list { grid-template-columns: 1fr 1fr; }
   .site-footer { grid-template-columns: 1fr 1fr; }
   .site-footer nav { justify-content: flex-start; }
@@ -444,10 +450,12 @@ section { scroll-margin-top: 84px; }
   .principle-list li p { grid-column: 2; }
   .mason-monogram { min-height: 400px; }
   .mason-bio { grid-template-columns: 1fr; gap: 20px; }
-  .credentials > p { align-items: flex-start; flex-direction: column; gap: 7px; }
   .credentials { margin-top: 65px; }
+  .credentials-heading { grid-template-columns: 1fr; gap: 18px; }
+  .credentials-heading > div { grid-template-columns: 1fr; }
+  .credentials-heading h3 { font-size: 40px; }
   .credential-list { grid-template-columns: 1fr; }
-  .credential-list a { min-height: 120px; }
+  .credential-list a { min-height: 380px; }
   .closing { min-height: 560px; padding-inline: 17px; }
   .site-footer { grid-template-columns: 1fr; gap: 28px; padding: 45px 17px; }
 }
