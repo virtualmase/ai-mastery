@@ -89,6 +89,18 @@ AI Mastery sits at the intersection of artificial intelligence, knowledge system
 - AI Mastery Public Implementation Self-Audit: https://virtualmase.github.io/ai-mastery/case-studies/ai-mastery-self-audit/
   - A bounded first-party case study of public implementation records, learning routes, repository evidence, and discovery surfaces as observed on 2026-08-27.
   - It does not establish audience, search, citation, revenue, customer, learner, security, accessibility, legal, compliance, certification, or product-performance outcomes. See the linked evidence ledger and claim register for sources, caveats, and explicit unknowns.
+  - Evidence ledger: https://virtualmase.github.io/ai-mastery/case-studies/ai-mastery-self-audit/ai-mastery-self-audit-evidence.md
+  - Claim register: https://virtualmase.github.io/ai-mastery/case-studies/ai-mastery-self-audit/claim-register.json
+  - Correction route: https://github.com/virtualmase/ai-mastery/issues/new
+  - Recheck triggers and drafting disclosure: https://github.com/virtualmase/ai-mastery/blob/main/docs/ai-mastery-self-audit-content-brief.md
+
+## Machine-Readable Internet Learning
+
+- Canonical Entity Records: https://virtualmase.github.io/ai-mastery/learning/canonical-entity-records/
+  - A three-foundation learning cluster for naming a public subject, expressing source-backed relationships, and maintaining discovery records with clear crawler and model-behavior boundaries.
+  - Educational material only. It does not promise a knowledge-graph entry, indexing, ranking, crawling, citation, retrieval, rich result, or any model behavior.
+- Structured Relationship Data: https://virtualmase.github.io/ai-mastery/learning/structured-relationship-data/
+- Discovery Files and Crawl Boundaries: https://virtualmase.github.io/ai-mastery/learning/discovery-files-and-crawl-boundaries/
 
 ## GEO Learning
 

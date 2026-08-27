@@ -25,6 +25,12 @@ if (!css.includes('self-audit: a portable audit-desk interface')) failures.push(
 if (!ledger.includes('Explicit Unknowns') || !brief.includes('AI Mastery Self-Audit')) failures.push('Self-audit documentation is incomplete.');
 if (!home.includes('case-studies/ai-mastery-self-audit/')) failures.push('Homepage needs a case-study link.');
 if (!llms.includes(route)) failures.push('llms.txt is missing the case-study route.');
+for (const resource of [
+  'https://virtualmase.github.io/ai-mastery/case-studies/ai-mastery-self-audit/ai-mastery-self-audit-evidence.md',
+  'https://virtualmase.github.io/ai-mastery/case-studies/ai-mastery-self-audit/claim-register.json',
+  'https://github.com/virtualmase/ai-mastery/issues/new',
+  'https://github.com/virtualmase/ai-mastery/blob/main/docs/ai-mastery-self-audit-content-brief.md',
+]) if (!llms.includes(resource)) failures.push(`llms.txt is missing the self-audit resource: ${resource}`);
 if (!sitemap.includes(`<loc>${route}</loc>`)) failures.push('Sitemap is missing the case-study route.');
 if (failures.length) { console.error(JSON.stringify({ valid: false, failures }, null, 2)); process.exit(1); }
 console.log(JSON.stringify({ valid: true, claimClasses: requiredClasses.length, claims: claims.claims.length, network: false, publishing: false }, null, 2));
