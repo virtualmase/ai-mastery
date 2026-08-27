@@ -28,6 +28,7 @@ The site is a zero-dependency static document and can be served from GitHub Page
 ## Learning paths
 
 - Operator foundations: mandate, identity and signing, payment policy, settlement versus fulfillment, and exception handling
+- ARM foundations: resource scope, decision rights, trace records, and accountable exception design, extending the ARM pathway overview to five connected lessons.
 - GEO foundations: entity clarity, structured data, retrieval surface, source attribution, and currency decay
 - Knowledge Index: twelve connected research domains, each organized around a system question, a bounded set of methods, and the next layer a learner should inspect.
 

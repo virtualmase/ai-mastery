@@ -66,6 +66,16 @@ AI Mastery sits at the intersection of artificial intelligence, knowledge system
 - Agent Settlement vs. Fulfillment: https://virtualmase.github.io/ai-mastery/learning/agent-settlement-vs-fulfillment/
 - Agent Exception Handling: https://virtualmase.github.io/ai-mastery/learning/agent-exception-handling/
 
+## Autonomous Resource Management Learning
+
+- Autonomous Resource Management: https://virtualmase.github.io/ai-mastery/learning/autonomous-resource-management/
+  - A five-foundation operator pathway for mapping resource scope, decision rights, trace records, and exception routes before a workflow acts.
+  - Educational material only; it is not a certification, deployment approval, legal delegation, security assessment, or authorization to operate an autonomous system.
+- Autonomous Resource Inventory: https://virtualmase.github.io/ai-mastery/learning/autonomous-resource-inventory/
+- Autonomous Decision Rights: https://virtualmase.github.io/ai-mastery/learning/autonomous-decision-rights/
+- Autonomous Trace Records: https://virtualmase.github.io/ai-mastery/learning/autonomous-trace-records/
+- Autonomous Exception Design: https://virtualmase.github.io/ai-mastery/learning/autonomous-exception-design/
+
 ## GEO Learning
 
 - GEO Entity Foundations: https://virtualmase.github.io/ai-mastery/learning/geo-entity-foundations/
