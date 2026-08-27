@@ -1,0 +1,77 @@
+{
+  "schema_version": "1.0",
+  "case_study_id": "ai-mastery-self-audit-2026-08-27",
+  "audited_property": "https://virtualmase.github.io/ai-mastery/",
+  "audited_at": "2026-08-27",
+  "owner": "Mason Nguyen",
+  "purpose": "A bounded public self-audit of AI Mastery's implementation and publication records.",
+  "publication_rule": "Only facts and plainly labelled interpretations or frameworks may appear. Outcome claims remain omitted unless a dated, inspectable, owner-reviewed evidence record is added.",
+  "claims": [
+    {
+      "id": "AM-C01",
+      "class": "fact",
+      "statement": "AI Mastery is a public static website hosted at virtualmase.github.io/ai-mastery/. ",
+      "evidence": [
+        "https://github.com/virtualmase/ai-mastery",
+        "https://virtualmase.github.io/ai-mastery/"
+      ],
+      "reviewed_at": "2026-08-27",
+      "status": "publishable"
+    },
+    {
+      "id": "AM-C02",
+      "class": "fact",
+      "statement": "At the audit checkpoint, main includes a connected Knowledge Index plus ARM and Trust Infrastructure learning pathways.",
+      "evidence": [
+        "https://github.com/virtualmase/ai-mastery/commit/488d92e22167f5291e623c3798947a1117ae6c74",
+        "https://virtualmase.github.io/ai-mastery/"
+      ],
+      "reviewed_at": "2026-08-27",
+      "status": "publishable"
+    },
+    {
+      "id": "AM-C03",
+      "class": "fact",
+      "statement": "The public repository includes llms.txt, sitemap.xml, and local-only structural validation scripts for the Knowledge Index, ARM pathway, and Trust pathway.",
+      "evidence": [
+        "https://github.com/virtualmase/ai-mastery/tree/main/scripts",
+        "https://virtualmase.github.io/ai-mastery/llms.txt",
+        "https://virtualmase.github.io/ai-mastery/sitemap.xml"
+      ],
+      "reviewed_at": "2026-08-27",
+      "status": "publishable"
+    },
+    {
+      "id": "AM-C04",
+      "class": "interpretation",
+      "statement": "The combination of explicit learning boundaries, source shelves, and route discovery records is an effort to make the site easier to inspect by readers and systems.",
+      "evidence": [
+        "https://github.com/virtualmase/ai-mastery/blob/main/index.html",
+        "https://virtualmase.github.io/ai-mastery/llms.txt"
+      ],
+      "reviewed_at": "2026-08-27",
+      "status": "publishable",
+      "caveat": "This is an interpretation of the implementation, not evidence of reader comprehension, search visibility, citation, or adoption."
+    },
+    {
+      "id": "AM-C05",
+      "class": "framework",
+      "statement": "This case study uses an inspect, record, correct, and recheck framework for self-auditing public implementation claims.",
+      "evidence": [
+        "https://github.com/virtualmase/ai-mastery/blob/main/docs/ai-mastery-self-audit-evidence.md"
+      ],
+      "reviewed_at": "2026-08-27",
+      "status": "publishable",
+      "caveat": "The framework organizes review work; it does not certify a property or guarantee outcome quality."
+    },
+    {
+      "id": "AM-U01",
+      "class": "unknown",
+      "statement": "Organic search, citation, referral, ranking, learner, commercial, and conversion outcomes are not established by this audit.",
+      "evidence": [],
+      "reviewed_at": "2026-08-27",
+      "status": "held",
+      "caveat": "No attributed analytics, user-research, Search Console, financial, or independent outcome record was inspected."
+    }
+  ]
+}

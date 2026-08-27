@@ -84,6 +84,12 @@ AI Mastery sits at the intersection of artificial intelligence, knowledge system
 - Provenance Records and Content Credentials: https://virtualmase.github.io/ai-mastery/learning/provenance-records-and-content-credentials/
 - Verifier Policy and Correction Paths: https://virtualmase.github.io/ai-mastery/learning/verifier-policy-and-correction-paths/
 
+## Public Self-Audit
+
+- AI Mastery Public Implementation Self-Audit: https://virtualmase.github.io/ai-mastery/case-studies/ai-mastery-self-audit/
+  - A bounded first-party case study of public implementation records, learning routes, repository evidence, and discovery surfaces as observed on 2026-08-27.
+  - It does not establish audience, search, citation, revenue, customer, learner, security, accessibility, legal, compliance, certification, or product-performance outcomes. See the linked evidence ledger and claim register for sources, caveats, and explicit unknowns.
+
 ## GEO Learning
 
 - GEO Entity Foundations: https://virtualmase.github.io/ai-mastery/learning/geo-entity-foundations/
