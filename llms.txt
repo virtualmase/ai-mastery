@@ -76,6 +76,14 @@ AI Mastery sits at the intersection of artificial intelligence, knowledge system
 - Autonomous Trace Records: https://virtualmase.github.io/ai-mastery/learning/autonomous-trace-records/
 - Autonomous Exception Design: https://virtualmase.github.io/ai-mastery/learning/autonomous-exception-design/
 
+## Trust Infrastructure Learning
+
+- Evidence and Claim Boundaries: https://virtualmase.github.io/ai-mastery/learning/evidence-and-claim-boundaries/
+  - A three-foundation learning cluster for separating claims from evidence, provenance from truth, and technical verification from local reliance decisions.
+  - Educational material only; it is not a product description, security assessment, certification, compliance finding, or authorization to rely on a trust signal.
+- Provenance Records and Content Credentials: https://virtualmase.github.io/ai-mastery/learning/provenance-records-and-content-credentials/
+- Verifier Policy and Correction Paths: https://virtualmase.github.io/ai-mastery/learning/verifier-policy-and-correction-paths/
+
 ## GEO Learning
 
 - GEO Entity Foundations: https://virtualmase.github.io/ai-mastery/learning/geo-entity-foundations/
