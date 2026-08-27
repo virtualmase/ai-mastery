@@ -18,18 +18,31 @@ AI Mastery studies and engineers the systems that allow intelligent models to ac
 
 ## Core knowledge domains
 
-- Large language models and model evaluation
-- Retrieval-Augmented Generation and retrieval systems
-- Fine-tuning and model adaptation
-- Context engineering and knowledge engineering
-- AI agents and agentic workflows
-- Model orchestration and tool protocols
-- Inference architecture and distributed AI infrastructure
-- Generative Engine Optimization and AI search visibility
-- Machine-readable knowledge and entity architecture
-- AI observability and predictive intelligence
-- Verification, provenance, authenticity, and digital trust
-- Secure telemetry and distributed systems
+The public Knowledge Index is a connected learning map, not a catalogue of endorsements or certifications. Each domain begins with a system question and directs learners to the next related layer:
+
+1. Large language models: model capability, adaptation, evaluation, and limits. Connects to retrieval.
+2. RAG and retrieval: evidence selection, retrieval design, reranking, and citation. Connects to context engineering.
+3. Context engineering: instruction, memory, context assembly, and context control. Connects to agentic systems.
+4. Agentic systems: tools, plans, state, delegation, authority, and human approval. Connects to orchestration.
+5. Model orchestration: routing, workflows, guardrails, retries, and escalation. Connects to inference architecture.
+6. Inference architecture: serving, context growth, caching, scheduling, and distributed compute. Connects to observability.
+7. GEO and AI visibility: entity clarity, structured data, canonical records, attribution, and freshness. Connects to verification.
+8. AI observability: traces, metrics, evaluation signals, cost, and drift. Connects to security and prediction.
+9. Verification systems: provenance, integrity, authorization, attestations, and correction paths. Connects to the machine-readable web.
+10. Internet-scale ML: distributed ML, data systems, resilience, capacity, and failure isolation. Connects to inference architecture.
+11. Predictive systems: forecasting, calibration, risk signals, decision thresholds, and feedback. Connects to observability.
+12. Secure AI infrastructure: threat modeling, identity, authorization, policy, secrets, and execution boundaries. Connects to verification.
+
+## Knowledge Index source shelf
+
+These sources provide technical context for the public learning map. They do not constitute product endorsements, safety certifications, or a context-specific implementation evaluation.
+
+- Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks: https://arxiv.org/abs/2005.11401
+- NIST AI Risk Management Framework: https://www.nist.gov/itl/ai-risk-management-framework
+- Model Context Protocol specification: https://modelcontextprotocol.io/specification/2025-06-18
+- OpenTelemetry GenAI Semantic Conventions: https://github.com/open-telemetry/semantic-conventions-genai
+- OWASP Agentic AI Threats and Mitigations: https://genai.owasp.org/resource/agentic-ai-threats-and-mitigations/
+- C2PA Guidance for Artificial Intelligence and Machine Learning: https://spec.c2pa.org/specifications/specifications/2.4/ai-ml/ai_ml.html
 
 ## Verified professional context
 

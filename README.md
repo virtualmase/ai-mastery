@@ -29,6 +29,9 @@ The site is a zero-dependency static document and can be served from GitHub Page
 
 - Operator foundations: mandate, identity and signing, payment policy, settlement versus fulfillment, and exception handling
 - GEO foundations: entity clarity, structured data, retrieval surface, source attribution, and currency decay
+- Knowledge Index: twelve connected research domains, each organized around a system question, a bounded set of methods, and the next layer a learner should inspect.
+
+Run `node scripts/validate-knowledge-index.mjs` to verify the connected domain anchors, source shelf, styling hooks, and machine-readable handoff before publishing a change to the index.
 
 ## Identity source
 
