@@ -18,4 +18,6 @@ The header provides direct anchors to the resource field, decision rights, trace
 - The parent learning section exposes an ARM Pathway entry titled **Resource-aware autonomy**, with the new page as its one Foundation lesson.
 - The lesson contains its exact self-canonical URL and the sitemap contains that same URL.
 - The edited Agentic Commerce pathway copy no longer carries the retired `mandate` phrasing; it now uses **decision rights**.
-- Validate mobile presentation and the live GitHub Pages build after source publication.
+- GitHub Pages deployed commit `9fc80cf6fb3608e96e7781bf2351f92fe4d14efb` successfully through the public `pages build and deployment` workflow on 2026-08-27.
+- The live ARM URL resolves at <https://virtualmase.github.io/ai-mastery/learning/autonomous-resource-management/> with its intended title, page navigation, Resource Observatory, Decision Rights Atlas, Trace Record, Capability Relay, practice lab, and explicit ARM reference link.
+- The live parent page resolves at <https://virtualmase.github.io/ai-mastery/> and exposes **ARM Pathway / Resource-aware autonomy** as its third learning pathway.
