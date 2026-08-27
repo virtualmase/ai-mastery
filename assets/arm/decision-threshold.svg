@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 560" role="img" aria-labelledby="title desc">
+  <title id="title">ARM decision threshold topology</title>
+  <desc id="desc">A conceptual diagram showing four resource signals flowing toward a bounded decision gate, a trace record, and an escalation route.</desc>
+  <defs>
+    <linearGradient id="field" x1="0" x2="1" y1="0" y2="1">
+      <stop stop-color="#101a32"/>
+      <stop offset="1" stop-color="#22375e"/>
+    </linearGradient>
+    <linearGradient id="gate" x1="0" x2="1">
+      <stop stop-color="#ff714b"/>
+      <stop offset="1" stop-color="#f4bb8e"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop stop-color="#526dff" stop-opacity=".34"/>
+      <stop offset="1" stop-color="#526dff" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#8296c4" stroke-opacity=".19"/>
+    </pattern>
+    <filter id="soft" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="9"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="560" fill="url(#field)"/>
+  <rect width="1200" height="560" fill="url(#grid)"/>
+  <circle cx="606" cy="280" r="276" fill="url(#glow)"/>
+  <path d="M0 280H1200M606 0V560" stroke="#7890bf" stroke-opacity=".28"/>
+  <path d="M105 116H442M105 216H442M105 344H442M105 444H442" fill="none" stroke="#8fa2cc" stroke-opacity=".63" stroke-width="2"/>
+  <circle cx="104" cy="116" r="10" fill="#9de1d2"/>
+  <circle cx="104" cy="216" r="10" fill="#ff714b"/>
+  <circle cx="104" cy="344" r="10" fill="#9de1d2"/>
+  <circle cx="104" cy="444" r="10" fill="#ff714b"/>
+  <circle cx="442" cy="116" r="10" fill="#9de1d2"/>
+  <circle cx="442" cy="216" r="10" fill="#ff714b"/>
+  <circle cx="442" cy="344" r="10" fill="#9de1d2"/>
+  <circle cx="442" cy="444" r="10" fill="#ff714b"/>
+  <path d="M442 116L596 236M442 216L596 256M442 344L596 304M442 444L596 324" fill="none" stroke="#b4c2de" stroke-opacity=".55" stroke-width="2"/>
+  <path d="M486 116L596 236M486 216L596 256M486 344L596 304M486 444L596 324" fill="none" stroke="#526dff" stroke-opacity=".32" stroke-width="12" filter="url(#soft)"/>
+  <path d="M596 158L770 280L596 402Z" fill="#142544" stroke="url(#gate)" stroke-width="3"/>
+  <circle cx="642" cy="280" r="53" fill="none" stroke="#ff714b" stroke-width="2"/>
+  <circle cx="642" cy="280" r="13" fill="#ff714b"/>
+  <path d="M770 280H924" stroke="#ff714b" stroke-width="3"/>
+  <path d="M924 280L884 257V303Z" fill="#ff714b"/>
+  <rect x="924" y="196" width="164" height="168" rx="2" fill="#13213d" stroke="#a4b3d2" stroke-width="2"/>
+  <path d="M957 242H1054M957 280H1041M957 318H1018" stroke="#a8b7d4" stroke-width="6" stroke-linecap="square"/>
+  <circle cx="1060" cy="242" r="7" fill="#9de1d2"/>
+  <circle cx="1047" cy="280" r="7" fill="#ff714b"/>
+  <circle cx="1024" cy="318" r="7" fill="#9de1d2"/>
+  <path d="M1006 364V452H1090" fill="none" stroke="#ff714b" stroke-width="3" stroke-dasharray="8 9"/>
+  <path d="M1090 452L1068 434V470Z" fill="#ff714b"/>
+  <path d="M67 72H201M1001 72H1135M67 488H201M1001 488H1135" stroke="#ff714b" stroke-width="3"/>
+</svg>

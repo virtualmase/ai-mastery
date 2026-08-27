@@ -21,3 +21,9 @@ The header provides direct anchors to the resource field, decision rights, trace
 - GitHub Pages deployed commit `9fc80cf6fb3608e96e7781bf2351f92fe4d14efb` successfully through the public `pages build and deployment` workflow on 2026-08-27.
 - The live ARM URL resolves at <https://virtualmase.github.io/ai-mastery/learning/autonomous-resource-management/> with its intended title, page navigation, Resource Observatory, Decision Rights Atlas, Trace Record, Capability Relay, practice lab, and explicit ARM reference link.
 - The live parent page resolves at <https://virtualmase.github.io/ai-mastery/> and exposes **ARM Pathway / Resource-aware autonomy** as its third learning pathway.
+
+## Engagement-system visual upgrade
+
+- Local preview confirms that the new **Conceptual Topology / 01** visual appears between the Decision Rights Atlas and Trace Record, continuing the page’s resource-to-action-to-record narrative rather than introducing a generic image panel.
+- The SVG is source-controlled, responsive, and carries an image alternative that identifies the bounded decision gate, trace record, and escalation route. Its adjacent caption explicitly says it is conceptual rather than a live-system depiction.
+- The visual uses the page’s indigo, copper, ultramarine, and review-mint semantic roles while keeping its explanatory meaning available in HTML text.
