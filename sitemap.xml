@@ -127,6 +127,30 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://virtualmase.github.io/ai-mastery/learning/protocol-roles-and-boundaries/</loc>
+    <lastmod>2026-08-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://virtualmase.github.io/ai-mastery/learning/message-envelopes-and-correlation/</loc>
+    <lastmod>2026-08-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://virtualmase.github.io/ai-mastery/learning/capability-discovery-and-negotiation/</loc>
+    <lastmod>2026-08-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://virtualmase.github.io/ai-mastery/learning/task-state-and-human-handoffs/</loc>
+    <lastmod>2026-08-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://virtualmase.github.io/ai-mastery/learning/structured-relationship-data/</loc>
     <lastmod>2026-08-27</lastmod>
     <changefreq>monthly</changefreq>

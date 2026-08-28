@@ -102,6 +102,15 @@ AI Mastery sits at the intersection of artificial intelligence, knowledge system
 - Structured Relationship Data: https://virtualmase.github.io/ai-mastery/learning/structured-relationship-data/
 - Discovery Files and Crawl Boundaries: https://virtualmase.github.io/ai-mastery/learning/discovery-files-and-crawl-boundaries/
 
+## Agentic Interoperability and Workflow Primitives Learning
+
+- Protocol Roles and Boundaries: https://virtualmase.github.io/ai-mastery/learning/protocol-roles-and-boundaries/
+  - Foundation 01 for naming protocol participants, data boundaries, capabilities, and workflow authority before an agentic handoff.
+  - Educational material only; protocol roles do not establish identity, trust, authorization, safety, truth, or successful execution.
+- Message Envelopes and Correlation: https://virtualmase.github.io/ai-mastery/learning/message-envelopes-and-correlation/
+- Capability Discovery and Negotiation: https://virtualmase.github.io/ai-mastery/learning/capability-discovery-and-negotiation/
+- Task State and Human Handoffs: https://virtualmase.github.io/ai-mastery/learning/task-state-and-human-handoffs/
+
 ## GEO Learning
 
 - GEO Entity Foundations: https://virtualmase.github.io/ai-mastery/learning/geo-entity-foundations/
