@@ -481,3 +481,6 @@ section { scroll-margin-top: 84px; }
   *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; }
   [data-reveal] { opacity: 1; transform: none; }
 }
+
+/* AURE directory: editorial, light, portable. */
+.aure-directory{padding-top:6rem;padding-bottom:6rem}.aure-directory-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem;list-style:none;margin:2rem 0 0;padding:0}.aure-directory-grid li{border:1px solid var(--line,#cfc8ba);background:var(--paper,#fbfaf6)}.aure-directory-grid a{display:block;padding:1.25rem;color:inherit;text-decoration:none}.aure-directory-grid a:hover,.aure-directory-grid a:focus{background:#e8e1d5}.aure-directory-grid span,.aure-directory-grid b{display:block;color:#7d4b32;font-size:.72rem;letter-spacing:.08em}.aure-directory-grid strong{display:block;font-size:1.25rem;margin:.35rem 0}.aure-directory-grid b{margin-top:.8rem}@media(max-width:700px){.aure-directory-grid{grid-template-columns:1fr}}

@@ -129,3 +129,39 @@ AI Mastery sits at the intersection of artificial intelligence, knowledge system
 - GEO Retrieval Surface: https://virtualmase.github.io/ai-mastery/learning/geo-retrieval-surface/
 - GEO Source Attribution: https://virtualmase.github.io/ai-mastery/learning/geo-source-attribution/
 - GEO Currency & Decay: https://virtualmase.github.io/ai-mastery/learning/geo-currency-and-decay/
+
+## AURE — 16 Learning Silos
+- Directory: https://virtualmase.github.io/ai-mastery/aure/
+  - Coreweaver's sixteen-silo operating school. Each silo produces an inspectable artifact and bounded decision. Educational material only; it does not guarantee rankings, retrieval, revenue, safety, interoperability, or conversion.
+- Purpose and Buyer Truth: https://virtualmase.github.io/ai-mastery/aure/purpose-and-buyer-truth/
+  - Start with the buyer’s real question and define what a trustworthy answer must contain. Artifact: buyer question. Unknown remains unknown.
+- Evidence and Claim Boundaries: https://virtualmase.github.io/ai-mastery/aure/evidence-and-claim-boundaries/
+  - Separate fact, interpretation, framework, and promise before a claim enters a public system. Artifact: claim register. Unknown remains unknown.
+- Canonical Entity Records: https://virtualmase.github.io/ai-mastery/aure/canonical-entity-records/
+  - Give people and machines one inspectable record for who an organization is and what it actually does. Artifact: entity record. Unknown remains unknown.
+- Autonomous Resource Management: https://virtualmase.github.io/ai-mastery/aure/autonomous-resource-management/
+  - Map resources, authority, trace records, and exceptions before an agent acts. Artifact: resource map. Unknown remains unknown.
+- Trust Infrastructure: https://virtualmase.github.io/ai-mastery/aure/trust-infrastructure/
+  - Make provenance, verification, reliance, and correction visible without pretending a record proves truth. Artifact: trust packet. Unknown remains unknown.
+- Machine-Readable Internet: https://virtualmase.github.io/ai-mastery/aure/machine-readable-internet/
+  - Publish structured relationships and discovery files that help systems find the right record without promising ranking or retrieval. Artifact: discovery surface. Unknown remains unknown.
+- Agentic Interoperability: https://virtualmase.github.io/ai-mastery/aure/agentic-interoperability/
+  - Represent protocol roles, capabilities, messages, task state, and human handoffs without assuming interoperability guarantees safety. Artifact: interaction contract. Unknown remains unknown.
+- Economic Models and Agentic Commerce: https://virtualmase.github.io/ai-mastery/aure/economic-models-agentic-commerce/
+  - Keep value, payment, fulfillment, dispute, incentives, and risk allocation as separate states. Artifact: commercial state map. Unknown remains unknown.
+- Autonomous Governance and Policy Envelopes: https://virtualmase.github.io/ai-mastery/aure/autonomous-governance/
+  - Bound decisions with policy, evaluation, change control, exceptions, appeals, and accountable human roles. Artifact: policy envelope. Unknown remains unknown.
+- Offer Design and Qualification: https://virtualmase.github.io/ai-mastery/aure/offer-design-and-qualification/
+  - Turn a real buyer problem into a specific, inspectable offer with eligibility and no invented guarantee. Artifact: offer brief. Unknown remains unknown.
+- Discovery and Buyer Research: https://virtualmase.github.io/ai-mastery/aure/discovery-and-buyer-research/
+  - Find what a buyer is deciding, what evidence they trust, and where the current answer fails them. Artifact: discovery record. Unknown remains unknown.
+- Proof Packets and Case Evidence: https://virtualmase.github.io/ai-mastery/aure/proof-packets-and-case-evidence/
+  - Assemble evidence that a buyer can inspect without turning an example into a promise or a testimonial. Artifact: proof packet. Unknown remains unknown.
+- Agent Sales Conversations: https://virtualmase.github.io/ai-mastery/aure/agent-sales-conversations/
+  - Train agents to make the useful next step clear while staying inside authorization, evidence, and truth boundaries. Artifact: conversation brief. Unknown remains unknown.
+- Human Handoffs and Close: https://virtualmase.github.io/ai-mastery/aure/human-handoffs-and-close/
+  - Close the loop by routing the right evidence and decision to the right accountable person at the right time. Artifact: handoff packet. Unknown remains unknown.
+- Measurement, Correction, and Maintenance: https://virtualmase.github.io/ai-mastery/aure/measurement-correction-and-maintenance/
+  - Measure what actually happened, correct the record, and recheck it before stale truth becomes sales friction. Artifact: maintenance record. Unknown remains unknown.
+- AURE Capstone: The Trusted Buyer Path: https://virtualmase.github.io/ai-mastery/aure/aure-capstone/
+  - Connect all sixteen artifacts into one reviewable path from buyer question to evidence, decision, handoff, and maintained truth. Artifact: operating packet. Unknown remains unknown.
