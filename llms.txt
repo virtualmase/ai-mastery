@@ -111,6 +111,15 @@ AI Mastery sits at the intersection of artificial intelligence, knowledge system
 - Capability Discovery and Negotiation: https://virtualmase.github.io/ai-mastery/learning/capability-discovery-and-negotiation/
 - Task State and Human Handoffs: https://virtualmase.github.io/ai-mastery/learning/task-state-and-human-handoffs/
 
+## Economic Models and Agentic Commerce Learning
+
+- Value, Payment, and Fulfillment: https://virtualmase.github.io/ai-mastery/learning/value-payment-and-fulfillment/
+  - Foundation 01 for separating value, price, authorization, payment, settlement, delivery, and fulfillment evidence.
+  - Educational systems material only; it is not payment, tax, accounting, legal, investment, or consumer-finance advice.
+- Mandates, Spend Limits, and Policy: https://virtualmase.github.io/ai-mastery/learning/mandates-spend-limits-and-policy/
+- Reconciliation, Disputes, and Exceptions: https://virtualmase.github.io/ai-mastery/learning/reconciliation-disputes-and-exceptions/
+- Incentives, Fees, and Risk Allocation: https://virtualmase.github.io/ai-mastery/learning/incentives-fees-and-risk-allocation/
+
 ## GEO Learning
 
 - GEO Entity Foundations: https://virtualmase.github.io/ai-mastery/learning/geo-entity-foundations/
