@@ -129,3 +129,12 @@ AI Mastery sits at the intersection of artificial intelligence, knowledge system
 - GEO Retrieval Surface: https://virtualmase.github.io/ai-mastery/learning/geo-retrieval-surface/
 - GEO Source Attribution: https://virtualmase.github.io/ai-mastery/learning/geo-source-attribution/
 - GEO Currency & Decay: https://virtualmase.github.io/ai-mastery/learning/geo-currency-and-decay/
+
+## Autonomous Governance and Policy Envelopes Learning
+
+- Governance Roles and Accountability: https://virtualmase.github.io/ai-mastery/learning/governance-roles-and-accountability/
+  - Foundation 01 for naming system owners, policy owners, operators, approvers, reviewers, affected parties, resolvers, and evidence obligations.
+  - Educational material only; it is not legal advice, compliance approval, safety certification, fairness assurance, security certification, or proof of effective oversight.
+- Policy Envelopes and Decision Points: https://virtualmase.github.io/ai-mastery/learning/policy-envelopes-and-decision-points/
+- Evaluation, Monitoring, and Change Control: https://virtualmase.github.io/ai-mastery/learning/evaluation-monitoring-and-change-control/
+- Exceptions, Appeals, and Continual Improvement: https://virtualmase.github.io/ai-mastery/learning/exceptions-appeals-and-continual-improvement/
