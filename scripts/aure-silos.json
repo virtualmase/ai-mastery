@@ -1,0 +1,130 @@
+[
+  {
+    "number": "01",
+    "slug": "purpose-and-buyer-truth",
+    "title": "Purpose and Buyer Truth",
+    "description": "Start with the buyer’s real question and define what a trustworthy answer must contain.",
+    "artifact": "buyer question",
+    "url": "https://virtualmase.github.io/ai-mastery/aure/purpose-and-buyer-truth/"
+  },
+  {
+    "number": "02",
+    "slug": "evidence-and-claim-boundaries",
+    "title": "Evidence and Claim Boundaries",
+    "description": "Separate fact, interpretation, framework, and promise before a claim enters a public system.",
+    "artifact": "claim register",
+    "url": "https://virtualmase.github.io/ai-mastery/aure/evidence-and-claim-boundaries/"
+  },
+  {
+    "number": "03",
+    "slug": "canonical-entity-records",
+    "title": "Canonical Entity Records",
+    "description": "Give people and machines one inspectable record for who an organization is and what it actually does.",
+    "artifact": "entity record",
+    "url": "https://virtualmase.github.io/ai-mastery/aure/canonical-entity-records/"
+  },
+  {
+    "number": "04",
+    "slug": "autonomous-resource-management",
+    "title": "Autonomous Resource Management",
+    "description": "Map resources, authority, trace records, and exceptions before an agent acts.",
+    "artifact": "resource map",
+    "url": "https://virtualmase.github.io/ai-mastery/aure/autonomous-resource-management/"
+  },
+  {
+    "number": "05",
+    "slug": "trust-infrastructure",
+    "title": "Trust Infrastructure",
+    "description": "Make provenance, verification, reliance, and correction visible without pretending a record proves truth.",
+    "artifact": "trust packet",
+    "url": "https://virtualmase.github.io/ai-mastery/aure/trust-infrastructure/"
+  },
+  {
+    "number": "06",
+    "slug": "machine-readable-internet",
+    "title": "Machine-Readable Internet",
+    "description": "Publish structured relationships and discovery files that help systems find the right record without promising ranking or retrieval.",
+    "artifact": "discovery surface",
+    "url": "https://virtualmase.github.io/ai-mastery/aure/machine-readable-internet/"
+  },
+  {
+    "number": "07",
+    "slug": "agentic-interoperability",
+    "title": "Agentic Interoperability",
+    "description": "Represent protocol roles, capabilities, messages, task state, and human handoffs without assuming interoperability guarantees safety.",
+    "artifact": "interaction contract",
+    "url": "https://virtualmase.github.io/ai-mastery/aure/agentic-interoperability/"
+  },
+  {
+    "number": "08",
+    "slug": "economic-models-agentic-commerce",
+    "title": "Economic Models and Agentic Commerce",
+    "description": "Keep value, payment, fulfillment, dispute, incentives, and risk allocation as separate states.",
+    "artifact": "commercial state map",
+    "url": "https://virtualmase.github.io/ai-mastery/aure/economic-models-agentic-commerce/"
+  },
+  {
+    "number": "09",
+    "slug": "autonomous-governance",
+    "title": "Autonomous Governance and Policy Envelopes",
+    "description": "Bound decisions with policy, evaluation, change control, exceptions, appeals, and accountable human roles.",
+    "artifact": "policy envelope",
+    "url": "https://virtualmase.github.io/ai-mastery/aure/autonomous-governance/"
+  },
+  {
+    "number": "10",
+    "slug": "offer-design-and-qualification",
+    "title": "Offer Design and Qualification",
+    "description": "Turn a real buyer problem into a specific, inspectable offer with eligibility and no invented guarantee.",
+    "artifact": "offer brief",
+    "url": "https://virtualmase.github.io/ai-mastery/aure/offer-design-and-qualification/"
+  },
+  {
+    "number": "11",
+    "slug": "discovery-and-buyer-research",
+    "title": "Discovery and Buyer Research",
+    "description": "Find what a buyer is deciding, what evidence they trust, and where the current answer fails them.",
+    "artifact": "discovery record",
+    "url": "https://virtualmase.github.io/ai-mastery/aure/discovery-and-buyer-research/"
+  },
+  {
+    "number": "12",
+    "slug": "proof-packets-and-case-evidence",
+    "title": "Proof Packets and Case Evidence",
+    "description": "Assemble evidence that a buyer can inspect without turning an example into a promise or a testimonial.",
+    "artifact": "proof packet",
+    "url": "https://virtualmase.github.io/ai-mastery/aure/proof-packets-and-case-evidence/"
+  },
+  {
+    "number": "13",
+    "slug": "agent-sales-conversations",
+    "title": "Agent Sales Conversations",
+    "description": "Train agents to make the useful next step clear while staying inside authorization, evidence, and truth boundaries.",
+    "artifact": "conversation brief",
+    "url": "https://virtualmase.github.io/ai-mastery/aure/agent-sales-conversations/"
+  },
+  {
+    "number": "14",
+    "slug": "human-handoffs-and-close",
+    "title": "Human Handoffs and Close",
+    "description": "Close the loop by routing the right evidence and decision to the right accountable person at the right time.",
+    "artifact": "handoff packet",
+    "url": "https://virtualmase.github.io/ai-mastery/aure/human-handoffs-and-close/"
+  },
+  {
+    "number": "15",
+    "slug": "measurement-correction-and-maintenance",
+    "title": "Measurement, Correction, and Maintenance",
+    "description": "Measure what actually happened, correct the record, and recheck it before stale truth becomes sales friction.",
+    "artifact": "maintenance record",
+    "url": "https://virtualmase.github.io/ai-mastery/aure/measurement-correction-and-maintenance/"
+  },
+  {
+    "number": "16",
+    "slug": "aure-capstone",
+    "title": "AURE Capstone: The Trusted Buyer Path",
+    "description": "Connect all sixteen artifacts into one reviewable path from buyer question to evidence, decision, handoff, and maintained truth.",
+    "artifact": "operating packet",
+    "url": "https://virtualmase.github.io/ai-mastery/aure/aure-capstone/"
+  }
+]
