@@ -1,0 +1,21 @@
+{
+  "id": "aure-template-demo",
+  "type": "learning-silo",
+  "number": "01",
+  "title": "Purpose and Buyer Truth",
+  "dek": "Start with the buyer’s real question and define what a trustworthy answer must contain.",
+  "artifact": "Buyer-question brief",
+  "objective": "Name the audience, decision, evidence boundary, unknowns, and one honest next action.",
+  "practice": [
+    "Name the buyer and the decision in plain language.",
+    "List the evidence a reasonable buyer can inspect.",
+    "Mark unsupported outcomes as unknown.",
+    "Route the next decision to an accountable human owner."
+  ],
+  "boundary": "This teaches a method. It does not certify a system, prove a company is trustworthy, guarantee AI retrieval, or promise revenue, rankings, safety, interoperability, or conversion.",
+  "sources": [
+    { "label": "SOUL operating brief", "url": "../SOUL-operating-brief.md" },
+    { "label": "AURE 16-silo directory", "url": "../aure/" }
+  ],
+  "next": { "label": "Evidence and Claim Boundaries", "url": "../aure/evidence-and-claim-boundaries/" }
+}
