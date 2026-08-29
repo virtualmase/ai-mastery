@@ -165,3 +165,12 @@ AI Mastery sits at the intersection of artificial intelligence, knowledge system
   - Measure what actually happened, correct the record, and recheck it before stale truth becomes sales friction. Artifact: maintenance record. Unknown remains unknown.
 - AURE Capstone: The Trusted Buyer Path: https://virtualmase.github.io/ai-mastery/aure/aure-capstone/
   - Connect all sixteen artifacts into one reviewable path from buyer question to evidence, decision, handoff, and maintained truth. Artifact: operating packet. Unknown remains unknown.
+
+## Project discovery
+
+- All published pages directory: https://virtualmase.github.io/ai-mastery/directory/
+- Portable headless AURE template demo: https://virtualmase.github.io/ai-mastery/aure-template-demo/
+- Sitemap: https://virtualmase.github.io/ai-mastery/sitemap.xml
+- Source repository: https://github.com/virtualmase/ai-mastery
+
+The directory and template are implementation surfaces, not guarantees of ranking, retrieval, conversion, safety, or production suitability. Their purpose is to keep the project inspectable, portable, and maintainable.
