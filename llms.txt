@@ -121,6 +121,9 @@ AI Mastery sits at the intersection of artificial intelligence, knowledge system
 - Incentives, Fees, and Risk Allocation: https://virtualmase.github.io/ai-mastery/learning/incentives-fees-and-risk-allocation/
 
 ## GEO Learning
+- GEO Measurement & Evaluation: https://virtualmase.github.io/ai-mastery/learning/geo-measurement-and-evaluation/
+  - Separate structural crawl checks, Search Console observations, answer-system observations, and unknown outcomes. Artifact: four-column evaluation record. Unknown remains unknown.
+
 
 - GEO Entity Foundations: https://virtualmase.github.io/ai-mastery/learning/geo-entity-foundations/
   - A practical lesson and scored scenario covering entity resolution, structured data, retrieval surface, attribution, and currency.
