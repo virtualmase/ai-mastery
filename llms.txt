@@ -173,6 +173,10 @@ AI Mastery sits at the intersection of artificial intelligence, knowledge system
 - Guides hub: https://virtualmase.github.io/ai-mastery/guides/
   - Public index of AI Mastery field guides for technical SEO, GEO, AI systems, and trust.
 
+## Author
+- Author profile: https://virtualmase.github.io/ai-mastery/author/
+  - Canonical author record for Mason Nguyen and the AI Mastery source-led systems practice. It identifies authorship; it does not claim rankings, authority scores, citations, or outcomes.
+
 ## Project discovery
 
 - All published pages directory: https://virtualmase.github.io/ai-mastery/directory/
