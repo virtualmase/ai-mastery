@@ -1,0 +1,26 @@
+flowchart LR
+  H[Home / canonical entry] --> I[Topic index]
+  I --> P[Technical SEO procedure]
+  I --> G[GEO field guide]
+  I --> L[Learning silos]
+  P --> C[Crawlable HTML links]
+  P --> K[Canonical + indexability]
+  P --> S[Sitemap + robots]
+  G --> E[Evidence + sources]
+  G --> R[Reproducible audit]
+  L --> A[Artifacts + bounded decisions]
+  C --> R
+  K --> R
+  S --> R
+  E --> R
+  A --> R
+  R --> M[Measure: status, graph, discovery]
+  M --> U[Unknown: rankings, DA, citations]
+  classDef primary fill:#173b36,color:#fff,stroke:#173b36;
+  classDef system fill:#e8e1d5,color:#1e2924,stroke:#9a8f7c;
+  classDef evidence fill:#f5ede4,color:#5c3827,stroke:#b98d70;
+  classDef unknown fill:#fff8df,color:#5c4b1b,stroke:#d4b55a;
+  class H,G,P primary;
+  class I,L,C,K,S,A,R,M system;
+  class E evidence;
+  class U unknown;
