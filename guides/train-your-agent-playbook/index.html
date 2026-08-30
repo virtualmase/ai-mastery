@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>How to Train Your Agent — LLM vs. SLM, Local Hosting, and the Open-Weight Stack | AI Mastery</title>
+<meta name="description" content="A decision guide for a first agent: large vs. small language models, local hosting vs. a VPS, the open-weight tool stack, and what &quot;training&quot; actually means at each layer. Sourced, dated, and scoped — not a vendor ranking."/>
+<meta name="author" content="Mason Nguyen"/>
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large"/>
+<meta name="topic" content="Model Systems, LLM vs SLM, Local Inference, Open Weights, VPS, Agentic Computing, AI Mastery"/>
+
+<link rel="canonical" href="https://virtualmase.github.io/ai-mastery/guides/train-your-agent-playbook/"/>
+
+<meta property="og:type" content="article"/>
+<meta property="og:title" content="How to Train Your Agent — LLM vs. SLM, Local Hosting, and the Open-Weight Stack"/>
+<meta property="og:description" content="A decision guide for a first agent: model class, hosting path, and the four rungs of &quot;training&quot; — prompting, retrieval, fine-tuning, pretraining."/>
+<meta property="og:url" content="https://virtualmase.github.io/ai-mastery/guides/train-your-agent-playbook/"/>
+<meta property="article:published_time" content="2026-08-30"/>
+<meta property="article:modified_time" content="2026-08-30"/>
+<meta property="article:author" content="https://coreweaver.io/authors/mason-nguyen"/>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://virtualmase.github.io/ai-mastery/guides/train-your-agent-playbook/#webpage",
+      "url": "https://virtualmase.github.io/ai-mastery/guides/train-your-agent-playbook/",
+      "name": "How to Train Your Agent — LLM vs. SLM, Local Hosting, and the Open-Weight Stack",
+      "isPartOf": { "@id": "https://virtualmase.github.io/ai-mastery/#website" },
+      "breadcrumb": { "@id": "https://virtualmase.github.io/ai-mastery/guides/train-your-agent-playbook/#breadcrumb" },
+      "inLanguage": "en-US",
+      "dateModified": "2026-08-30"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://virtualmase.github.io/ai-mastery/guides/train-your-agent-playbook/#breadcrumb",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "AI Mastery", "item": "https://virtualmase.github.io/ai-mastery/" },
+        { "@type": "ListItem", "position": 2, "name": "Guides", "item": "https://virtualmase.github.io/ai-mastery/guides/" },
+        { "@type": "ListItem", "position": 3, "name": "Train Your Agent Playbook", "item": "https://virtualmase.github.io/ai-mastery/guides/train-your-agent-playbook/" }
+      ]
+    },
+    {
+      "@type": "TechArticle",
+      "@id": "https://virtualmase.github.io/ai-mastery/guides/train-your-agent-playbook/#article",
+      "headline": "How to Train Your Agent — LLM vs. SLM, Local Hosting, and the Open-Weight Stack",
+      "description": "A decision guide covering model class (LLM vs. SLM), hosting path (local, VPS, or managed API), the open-weight local tool stack, and the four distinct methods people mean when they say \"train.\"",
+      "datePublished": "2026-08-30",
+      "dateModified": "2026-08-30",
+      "mainEntityOfPage": { "@id": "https://virtualmase.github.io/ai-mastery/guides/train-your-agent-playbook/#webpage" },
+      "author": { "@id": "https://coreweaver.io/authors/mason-nguyen#person" },
+      "publisher": { "@id": "https://coreweaver.io/#org" },
+      "about": [
+        { "@type": "Thing", "name": "Large language models" },
+        { "@type": "Thing", "name": "Small language models" },
+        { "@type": "Thing", "name": "Virtual private server" },
+        { "@type": "Thing", "name": "Open-weight models" },
+        { "@type": "Thing", "name": "Model fine-tuning" }
+      ],
+      "keywords": ["LLM vs SLM", "open weights", "VPS", "Ollama", "llama.cpp", "vLLM", "OpenRouter", "agentic computing", "model fine-tuning"]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://coreweaver.io/#org",
+      "name": "Coreweaver",
+      "url": "https://coreweaver.io"
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://virtualmase.github.io/ai-mastery/guides/train-your-agent-playbook/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is the difference between an LLM and an SLM?",
+          "acceptedAnswer": { "@type": "Answer", "text": "A large language model (roughly 7B to 400B+ parameters) is built for broad, open-ended reasoning and typically runs on cloud GPUs or a hosted API. A small language model (roughly 1B to 8B parameters) is built for narrower, repeatable tasks and can run on a laptop or consumer GPU at much lower cost per response." }
+        },
+        {
+          "@type": "Question",
+          "name": "What is a VPS, in plain terms?",
+          "acceptedAnswer": { "@type": "Answer", "text": "A Virtual Private Server is an isolated slice of a physical server, rented monthly, with its own operating system and open ports — functioning like a private computer in a data center that stays on whether or not your own device is running." }
+        },
+        {
+          "@type": "Question",
+          "name": "Should I run a model locally or rent a VPS?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Local hosting suits learning, privacy-sensitive work, offline use, and small models. A VPS suits an agent that needs to stay online continuously or a model too large for a personal machine. Neither is universally correct; the decision depends on model size, uptime needs, and budget." }
+        },
+        {
+          "@type": "Question",
+          "name": "What does \"training an agent\" actually mean?",
+          "acceptedAnswer": { "@type": "Answer", "text": "The phrase is commonly used for four distinct methods: prompting (instructions only, no weight changes), retrieval (giving the model access to documents or live data), fine-tuning (adjusting weights on a task-specific dataset), and pretraining (training a base model from scratch). Most people building their first agent need only the first two." }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the difference between OpenRouter and Perplexity?",
+          "acceptedAnswer": { "@type": "Answer", "text": "OpenRouter is a routing layer that provides one API in front of many model providers. Perplexity is a retrieval-and-answer product that pairs a model with live web search to produce cited, current answers. One is model access infrastructure; the other is a research and answer tool." }
+        }
+      ]
+    }
+  ]
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+
+<style>
+:root {
+  --bg: #20221f; --bg2: #282b27; --bg3: #30342f; --surface: #383c36;
+  --border: #4a5049; --border2: #5a6159;
+  --accent: #d4a24b; --accent2: #b68436; --accent-dim: rgba(212,162,75,0.12);
+  --cyan: #9aaa8d; --cyan-dim: rgba(154,170,141,0.12);
+  --amber: #d88966; --amber-dim: rgba(216,137,102,0.12);
+  --text: #f7f3e9; --text2: #c8c6bd; --text3: #92988f;
+  --mono: 'IBM Plex Mono', monospace; --sans: 'IBM Plex Sans', sans-serif;
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { font-size: 16px; scroll-behavior: smooth; }
+body {
+  font-family: var(--sans); background: var(--bg); color: var(--text);
+  line-height: 1.7; -webkit-font-smoothing: antialiased;
+}
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+a:focus-visible, button:focus-visible { outline: 2px solid var(--cyan); outline-offset: 3px; }
+::selection { background: var(--accent); color: #20221f; }
+.wrap { max-width: 880px; margin: 0 auto; padding: 0 24px; }
+
+/* nav */
+nav.site { border-bottom: 1px solid var(--border); padding: 18px 0; }
+.navrow { display:flex; justify-content:space-between; align-items:center; font-family: var(--mono); font-size: 12px; letter-spacing: .05em; }
+.navrow a.home { color: var(--text); font-weight: 600; }
+.navrow .links { display:flex; gap: 20px; }
+.navrow .links a { color: var(--text3); }
+.navrow .links a:hover { color: var(--text); }
+
+/* breadcrumb */
+.crumbs { font-family: var(--mono); font-size: 12px; color: var(--text3); padding: 20px 0 0; }
+.crumbs a { color: var(--text3); }
+.crumbs a:hover { color: var(--accent); }
+
+/* hero */
+.hero { padding: 40px 0 56px; border-bottom: 1px solid var(--border); }
+.eyebrow { font-family: var(--mono); font-size: 12px; letter-spacing: .12em; text-transform: uppercase; color: var(--accent); margin-bottom: 18px; }
+h1 { font-family: var(--sans); font-weight: 700; font-size: clamp(32px,5vw,52px); line-height: 1.08; letter-spacing: -0.01em; margin-bottom: 20px; max-width: 16ch; }
+.lede { font-size: 18px; color: var(--text2); max-width: 62ch; }
+.meta-line { display:flex; gap:18px; flex-wrap:wrap; margin-top: 28px; font-family: var(--mono); font-size: 11.5px; color: var(--text3); letter-spacing: .04em; }
+.meta-line span { border-left: 1px solid var(--border2); padding-left: 14px; }
+.meta-line span:first-child { border-left:none; padding-left:0; }
+
+section { padding: 56px 0; border-bottom: 1px solid var(--border); }
+h2 { font-size: clamp(24px,3vw,32px); font-weight: 700; margin-bottom: 16px; letter-spacing:-0.01em; }
+h3 { font-size: 19px; font-weight: 600; margin-bottom: 10px; }
+p { color: var(--text2); max-width: 68ch; margin-bottom: 4px; }
+.section-tag { font-family: var(--mono); font-size: 11px; color: var(--text3); letter-spacing:.1em; text-transform:uppercase; margin-bottom: 10px; }
+
+/* comparison table */
+.compare { border:1px solid var(--border); background: var(--bg2); margin-top: 28px; }
+.compare-head { display:grid; grid-template-columns: 1fr 1fr; }
+.compare-head div { padding: 18px 22px; font-family: var(--mono); font-size: 13px; letter-spacing:.06em; text-transform:uppercase; }
+.compare-head div:first-child { color: var(--accent); border-right: 1px solid var(--border); }
+.compare-head div:last-child { color: var(--cyan); }
+.compare-row { display:grid; grid-template-columns: 1fr 1fr; border-top: 1px solid var(--border); }
+.compare-row > div { padding: 14px 22px; font-size: 14px; color: var(--text2); }
+.compare-row > div:first-child { border-right: 1px solid var(--border); color: var(--text); }
+.compare-label { font-family: var(--mono); font-size: 10.5px; color: var(--text3); text-transform:uppercase; letter-spacing:.06em; display:block; margin-bottom:3px; }
+@media (max-width:640px){ .compare-head, .compare-row{ grid-template-columns:1fr; } .compare-row > div:first-child{ border-right:none; border-bottom:1px solid var(--border);} }
+
+.callout { border-left: 2px solid var(--accent); background: var(--accent-dim); padding: 16px 22px; margin: 30px 0; }
+.callout p { color: var(--text); font-size: 15px; margin:0; }
+
+/* hosting matrix */
+.matrix { border:1px solid var(--border); background: var(--bg2); margin-top: 26px; }
+.matrix-row { display:grid; grid-template-columns: 1fr 1fr 1fr; border-top:1px solid var(--border); }
+.matrix-row:first-child { border-top:none; }
+.matrix-row > div { padding: 16px 20px; font-size: 13.5px; }
+.matrix-route { font-weight:700; color: var(--text); }
+.matrix-fit { color: var(--text2); }
+.pill { font-family: var(--mono); font-size: 10px; letter-spacing:.08em; text-transform:uppercase; padding:3px 8px; border-radius:2px; display:inline-block; }
+.pill.go { background: var(--accent-dim); color: var(--accent); border:1px solid rgba(212,162,75,.42); }
+.pill.hold { background: var(--cyan-dim); color: var(--cyan); border:1px solid rgba(154,170,141,.42); }
+.pill.skip { background: var(--amber-dim); color: var(--amber); border:1px solid rgba(216,137,102,.42); }
+@media (max-width:640px){ .matrix-row{ grid-template-columns:1fr; } .matrix-row > div{ border-top:1px solid var(--border);} .matrix-row > div:first-child{ border-top:none;} }
+
+/* definition */
+.define { border:1px solid var(--border); background: var(--bg2); padding: 24px 26px; margin: 26px 0; }
+.define .k { font-family: var(--mono); font-size: 10.5px; color: var(--cyan); letter-spacing:.1em; text-transform:uppercase; margin-bottom: 8px; }
+.define h4 { font-size: 19px; font-weight: 700; margin-bottom: 8px; }
+.define p { font-size: 14.5px; }
+
+/* stack grid */
+.stackgrid { display:grid; grid-template-columns: 1fr 1fr; gap:1px; background: var(--border); border:1px solid var(--border); margin-top: 24px; }
+.stackcard { background: var(--bg); padding: 22px 22px; }
+.stackcard .tag { font-family: var(--mono); font-size: 10px; color: var(--accent); letter-spacing:.08em; text-transform:uppercase; }
+.stackcard h4 { font-size: 16px; font-weight:700; margin: 8px 0 6px; }
+.stackcard p { font-size: 13.5px; }
+.stackcard a.src { font-family: var(--mono); font-size: 11px; color: var(--text3); display:inline-block; margin-top:8px; }
+@media (max-width:640px){ .stackgrid{ grid-template-columns:1fr; } }
+
+/* ladder */
+.ladder { counter-reset: rung; margin-top: 20px; }
+.rung { display:grid; grid-template-columns: 46px 1fr; gap:18px; padding:20px 0; border-top:1px solid var(--border); }
+.rung:first-child{ border-top:none; }
+.rung-num { counter-increment: rung; font-family: var(--mono); font-size: 22px; color: var(--text3); }
+.rung h4 { font-size:15.5px; font-weight:700; margin-bottom:4px; }
+.rung h4 .cost { font-family: var(--mono); font-size:10px; letter-spacing:.06em; text-transform:uppercase; color: var(--cyan); margin-left:8px; font-weight:400; }
+.rung p { font-size:13.5px; }
+
+/* faq */
+.faq-item { border-top: 1px solid var(--border); padding: 20px 0; }
+.faq-item:first-child { border-top:none; }
+.faq-item h4 { font-size: 15.5px; font-weight:700; margin-bottom:6px; }
+.faq-item p { font-size: 14px; }
+
+.warn { font-family: var(--mono); font-size: 12px; color: var(--amber); border:1px solid rgba(216,137,102,.38); background: var(--amber-dim); padding: 14px 16px; margin-top: 22px; }
+
+/* next */
+.nextgrid { display:grid; grid-template-columns: repeat(3,1fr); gap:1px; background: var(--border); border:1px solid var(--border); margin-top: 22px; }
+.nextcard { background: var(--bg); padding: 22px 20px; }
+.nextcard .k { font-family: var(--mono); font-size:10px; color: var(--cyan); letter-spacing:.08em; text-transform:uppercase; }
+.nextcard h4 { font-size: 16px; font-weight:700; margin:8px 0 8px; }
+.nextcard p { font-size: 12.5px; margin-bottom:10px; }
+.nextcard a { font-family: var(--mono); font-size: 11.5px; }
+@media (max-width:700px){ .nextgrid{ grid-template-columns:1fr; } }
+
+footer { padding: 44px 0 60px; }
+footer p { font-family: var(--mono); font-size: 11px; color: var(--text3); }
+footer .rev { color: var(--text3); font-family: var(--mono); font-size:11px; margin-top:6px; }
+</style>
+</head>
+<body>
+
+<nav class="site">
+  <div class="wrap navrow">
+    <a class="home" href="https://virtualmase.github.io/ai-mastery/">AI MASTERY</a>
+    <div class="links">
+      <a href="https://virtualmase.github.io/ai-mastery/guides/">Guides</a>
+      <a href="https://virtualmase.github.io/ai-mastery/#research">Knowledge index</a>
+      <a href="https://virtualmase.github.io/ai-mastery/#learning">Learning paths</a>
+    </div>
+  </div>
+</nav>
+
+<div class="wrap crumbs">
+  <a href="https://virtualmase.github.io/ai-mastery/">AI Mastery</a> / <a href="https://virtualmase.github.io/ai-mastery/guides/">Guides</a> / Train Your Agent Playbook
+</div>
+
+<main id="main">
+
+<section class="hero" style="padding-top:24px;">
+  <div class="wrap">
+    <div class="eyebrow">GUIDE · MODEL SYSTEMS</div>
+    <h1>How to train your agent, before it trains you.</h1>
+    <p class="lede">A decision guide for a first agent build: which model class fits the task, where it should run, and what "training" actually means at each layer — sourced against each tool's own documentation, not a vendor ranking.</p>
+    <div class="meta-line">
+      <span>Published 2026-08-30</span>
+      <span>Owner: Mason Nguyen</span>
+      <span>Educational — not a hosting or vendor recommendation for your specific workload</span>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="section-tag">01 — Why this decision comes first</div>
+    <h2>Three decisions sit upstream of everything else.</h2>
+    <p>Most first agents fail before a single prompt goes wrong — because nobody decided what class of model the job needed, where it should run, or how it reaches current information. Prompts, tools, and guardrails are craft you layer on afterward. Model class, hosting, and access method are the load-bearing decisions.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="section-tag">02 — Model class</div>
+    <h2>LLM vs. SLM: pick the weight class for the job.</h2>
+    <p>"AI model" is not one thing. A large language model and a small language model solve different problems at different costs — the first choice is matching the class to the task, not defaulting to the biggest name available.</p>
+
+    <div class="compare">
+      <div class="compare-head"><div>Large language model</div><div>Small language model</div></div>
+      <div class="compare-row"><div><span class="compare-label">Size class</span>Roughly 7B–400B+ parameters</div><div><span class="compare-label">Size class</span>Roughly 1B–8B parameters</div></div>
+      <div class="compare-row"><div><span class="compare-label">Strength</span>Broad reasoning, open-ended tasks</div><div><span class="compare-label">Strength</span>Speed, low cost, easy to fine-tune</div></div>
+      <div class="compare-row"><div><span class="compare-label">Typically runs on</span>Cloud GPUs, hosted APIs</div><div><span class="compare-label">Typically runs on</span>Laptops, consumer GPUs, edge devices</div></div>
+      <div class="compare-row"><div><span class="compare-label">Cost profile</span>Per-token billing or serious hardware</div><div><span class="compare-label">Cost profile</span>Near-zero marginal cost once running</div></div>
+      <div class="compare-row"><div><span class="compare-label">Weak point</span>Latency and cost on narrow, repeated jobs</div><div><span class="compare-label">Weak point</span>Narrower reasoning outside its tuned task</div></div>
+    </div>
+
+    <div class="callout">
+      <p>General heuristic, not a benchmark claim: a small model fine-tuned for one repeatable job — classifying, extracting, routing — will often beat a general-purpose large model on speed and cost for that job. A large model earns its size when the task is genuinely open-ended.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="section-tag">03 — Hosting path</div>
+    <h2>Local, rented, or managed — three routes, different jobs.</h2>
+    <p>Once the model class is set, decide where it lives. None of these is the correct answer by default; each fits a different constraint.</p>
+
+    <div class="matrix">
+      <div class="matrix-row">
+        <div class="matrix-route">Local machine</div>
+        <div class="matrix-fit">Learning, privacy-sensitive data, offline work, small models</div>
+        <div><span class="pill go">Fits SLMs well</span></div>
+      </div>
+      <div class="matrix-row">
+        <div class="matrix-route">A rented VPS</div>
+        <div class="matrix-fit">Always-on agents, models too large for a personal machine</div>
+        <div><span class="pill hold">Budget it monthly</span></div>
+      </div>
+      <div class="matrix-row">
+        <div class="matrix-route">Managed API</div>
+        <div class="matrix-fit">Shipping fast, frontier reasoning, no infrastructure appetite</div>
+        <div><span class="pill go">Fastest to working</span></div>
+      </div>
+      <div class="matrix-row">
+        <div class="matrix-route">Training a new base model</div>
+        <div class="matrix-fit">Research labs and funded teams building foundation models</div>
+        <div><span class="pill skip">Not a first move</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="section-tag">04 — Terms</div>
+    <h2>What a VPS actually is.</h2>
+    <div class="define">
+      <div class="k">Plain definition</div>
+      <h4>An isolated slice of a shared physical server, rented monthly, with its own operating system.</h4>
+      <p>A provider owns racks of physical machines and partitions each into virtual machines. Renting one gives you your own OS, storage, and open ports — a private computer inside someone else's data center, running whether or not your laptop is open. Commonly used providers for general-purpose boxes: DigitalOcean, Hetzner, Linode/Akamai, Vultr. For a rented GPU specifically, see RunPod, Lambda, or Paperspace.</p>
+    </div>
+    <div class="warn">Before renting, confirm the model you plan to run fits the VRAM or RAM the plan actually offers. A quantized 7B model and a raw 70B model need very different boxes — undersizing is the most common first mistake.</div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="section-tag">05 — Local stack</div>
+    <h2>Running open weights on your own machine.</h2>
+    <p>Open weights means a model's trained parameters are published for local download — no API key, no per-token bill, no dependency on a remote server staying online. It's a reasonable place to start: mistakes are cheap and the feedback loop is immediate.</p>
+
+    <div class="stackgrid">
+      <div class="stackcard">
+        <span class="tag">Easiest entry</span>
+        <h4>Ollama</h4>
+        <p>A local install that pulls open-weight models and serves them behind a local API.</p>
+        <a class="src" href="https://github.com/ollama/ollama">github.com/ollama/ollama ↗</a>
+      </div>
+      <div class="stackcard">
+        <span class="tag">Visual comparison</span>
+        <h4>LM Studio</h4>
+        <p>A desktop app for browsing and running open-weight models with a GUI before committing to one in code.</p>
+        <a class="src" href="https://lmstudio.ai">lmstudio.ai ↗</a>
+      </div>
+      <div class="stackcard">
+        <span class="tag">Maximum control</span>
+        <h4>llama.cpp</h4>
+        <p>The inference engine underneath much of this ecosystem — runs quantized models efficiently, including CPU-only.</p>
+        <a class="src" href="https://github.com/ggml-org/llama.cpp">github.com/ggml-org/llama.cpp ↗</a>
+      </div>
+      <div class="stackcard">
+        <span class="tag">Production serving</span>
+        <h4>vLLM</h4>
+        <p>Built for throughput — the tool for a model that needs to serve real traffic on a VPS or GPU box.</p>
+        <a class="src" href="https://github.com/vllm-project/vllm">github.com/vllm-project/vllm ↗</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="section-tag">06 — Hosted access</div>
+    <h2>OpenRouter and Perplexity solve different problems.</h2>
+    <div class="define">
+      <div class="k">Model routing</div>
+      <h4>OpenRouter — one API in front of many model providers.</h4>
+      <p>A single integration point across models from different labs, useful for comparing models or avoiding lock-in to one provider's pricing and uptime.</p>
+    </div>
+    <div class="define">
+      <div class="k">Retrieval &amp; answers, not a model host</div>
+      <h4>Perplexity — a model paired with live web search.</h4>
+      <p>Built to produce cited, current answers. A research and citation-pattern reference — not infrastructure to deploy your own agent on top of. See this site's <a href="https://virtualmase.github.io/ai-mastery/#domain-retrieval">RAG &amp; Retrieval domain</a> for the underlying pattern.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="section-tag">07 — Vocabulary</div>
+    <h2>"Training" is four different methods, not one.</h2>
+    <p>Climb only as high as the task requires.</p>
+    <div class="ladder">
+      <div class="rung"><div class="rung-num">01</div><div><h4>Prompting <span class="cost">no weight change</span></h4><p>Shape behavior with instructions and examples. Solves most problems before anything else is warranted.</p></div></div>
+      <div class="rung"><div class="rung-num">02</div><div><h4>Retrieval <span class="cost">no retraining</span></h4><p>Give the model access to your documents or live data at answer time. Solves "the model doesn't know my facts."</p></div></div>
+      <div class="rung"><div class="rung-num">03</div><div><h4>Fine-tuning <span class="cost">real infrastructure cost</span></h4><p>Adjust weights on a task-specific dataset. Right for narrowing style or format on a repeated job — often most cost-effective on an SLM.</p></div></div>
+      <div class="rung"><div class="rung-num">04</div><div><h4>Pretraining <span class="cost">frontier-lab scale</span></h4><p>Training a base model from scratch. Almost nobody building a first agent needs this step.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="section-tag">08 — FAQ</div>
+    <h2>Common questions on this decision.</h2>
+    <div class="faq-item"><h4>What is the difference between an LLM and an SLM?</h4><p>A large language model (roughly 7B–400B+ parameters) is built for broad reasoning and typically runs on cloud GPUs or a hosted API. A small language model (roughly 1B–8B parameters) is built for narrower, repeatable tasks and can run on a laptop or consumer GPU at much lower cost.</p></div>
+    <div class="faq-item"><h4>What is a VPS, in plain terms?</h4><p>An isolated slice of a physical server, rented monthly, with its own operating system and open ports — like a private computer in a data center that stays on regardless of your own device.</p></div>
+    <div class="faq-item"><h4>Should I run a model locally or rent a VPS?</h4><p>Local suits learning, privacy-sensitive work, offline use, and small models. A VPS suits an agent that must stay online continuously, or a model too large for a personal machine. The right answer depends on model size, uptime needs, and budget — not a universal rule.</p></div>
+    <div class="faq-item"><h4>What does "training an agent" actually mean?</h4><p>Most people mean one of four distinct methods: prompting, retrieval, fine-tuning, or pretraining. Most first agents only need the first two.</p></div>
+    <div class="faq-item"><h4>What's the difference between OpenRouter and Perplexity?</h4><p>OpenRouter is a routing layer providing one API across many model providers. Perplexity is a retrieval-and-answer product pairing a model with live web search — a research tool, not model-hosting infrastructure.</p></div>
+  </div>
+</section>
+
+<section style="border-bottom:none;">
+  <div class="wrap">
+    <div class="section-tag">09 — Next</div>
+    <h2>Where this connects on AI Mastery.</h2>
+    <p>This guide sits at Layer 01, Model Systems — the knowledge index domain with no dedicated learning pathway yet. Once a model is chosen and running, these are the adjacent rooms.</p>
+    <div class="nextgrid">
+      <div class="nextcard">
+        <span class="k">Layer 03 · Agentic compute</span>
+        <h4>Give it something to do.</h4>
+        <p>Planning, tools, and the authority boundaries an agent needs before it acts on its own.</p>
+        <a href="https://virtualmase.github.io/ai-mastery/learning/agentic-commerce-operator-foundations/">Operator foundations →</a>
+      </div>
+      <div class="nextcard">
+        <span class="k">Layer 02 · Knowledge</span>
+        <h4>Keep it current.</h4>
+        <p>Retrieval is what keeps answers grounded once a model can reason.</p>
+        <a href="https://virtualmase.github.io/ai-mastery/#domain-retrieval">RAG &amp; retrieval →</a>
+      </div>
+      <div class="nextcard">
+        <span class="k">Layer 09 · Trust</span>
+        <h4>Separate claim from evidence.</h4>
+        <p>The discipline this page itself follows, explained as a lesson.</p>
+        <a href="https://virtualmase.github.io/ai-mastery/learning/evidence-and-claim-boundaries/">Evidence &amp; claim boundaries →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>AI Mastery — Mason Nguyen. Educational material; not a hosting, vendor, or investment recommendation. Facts are sourced to each tool's own documentation; interpretations are labeled as such in the page claim register.</p>
+    <p class="rev">Last reviewed 2026-08-30 · Recheck due ~90 days (fast-moving tool ecosystem) · <a href="https://virtualmase.github.io/ai-mastery/guides/">All guides</a></p>
+  </div>
+</footer>
+
+</body>
+</html>
+
