@@ -180,6 +180,9 @@ AI Mastery sits at the intersection of artificial intelligence, knowledge system
   - Public index of AI Mastery field guides for technical SEO, GEO, AI systems, and trust.
 
 ## Field studies
+- Field Studies and Evidence Records hub: https://virtualmase.github.io/ai-mastery/case-studies/
+  - Collection of dated first-party working records that classify claims, expose evidence boundaries, preserve unknowns, and provide correction routes.
+  - The collection does not certify a client, product, system, strategy, or result.
 - Arctura Network — From Technical Proof to a Durable Public Idea: https://virtualmase.github.io/ai-mastery/case-studies/arctura-network/
   - A first-party working record dated 2026-08-30 about public positioning, plain-language information architecture, and preservation of the existing testnet evidence boundary.
   - The study records a design direction, not a deployed-redesign claim or measured reader, search, participation, or commercial outcome.

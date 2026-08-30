@@ -15,7 +15,7 @@ expect(html.includes("Implementation reference"), "template output must be label
 expect(!html.includes("amp;amp"), "titles must not be double encoded");
 expect(html.includes("AURE — The trusted buyer path"), "AURE directory title must be current");
 expect(new Set(indexedRoutes).size === indexedRoutes.length, "each route must appear only once in the publication collections");
-expect(indexedRoutes.length === 55, `expected 55 indexed destinations, found ${indexedRoutes.length}`);
+expect(indexedRoutes.length === 56, `expected 56 indexed destinations, found ${indexedRoutes.length}`);
 
 if (failures.length) {
   console.error(JSON.stringify({ valid: false, failures }, null, 2));
