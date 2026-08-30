@@ -37,6 +37,9 @@ jobs:
       - name: Validate AURE experience
         run: node scripts/validate-aure-remaster.mjs
 
+      - name: Validate publication index
+        run: node scripts/validate-publication-index.mjs
+
       - name: Validate knowledge index and field records
         run: |
           node scripts/validate-knowledge-index.mjs
