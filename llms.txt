@@ -166,6 +166,13 @@ AI Mastery sits at the intersection of artificial intelligence, knowledge system
 - AURE Capstone: The Trusted Buyer Path: https://virtualmase.github.io/ai-mastery/aure/aure-capstone/
   - Connect all sixteen artifacts into one reviewable path from buyer question to evidence, decision, handoff, and maintained truth. Artifact: operating packet. Unknown remains unknown.
 
+
+## Field guides
+- Technical SEO and GEO Playbook: https://virtualmase.github.io/ai-mastery/guides/technical-seo-geo-playbook/
+  - Source-backed field record of the crawlable authority graph, internal link policy, technical SEO procedure, GEO implications, reproducible audit, and portability method. Facts are sourced; interpretations are labeled; rankings, citations, and Domain Authority remain unknown.
+- Guides hub: https://virtualmase.github.io/ai-mastery/guides/
+  - Public index of AI Mastery field guides for technical SEO, GEO, AI systems, and trust.
+
 ## Project discovery
 
 - All published pages directory: https://virtualmase.github.io/ai-mastery/directory/
