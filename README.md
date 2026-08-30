@@ -44,3 +44,25 @@ Run `node scripts/validate-knowledge-index.mjs` to verify the connected domain a
 ## Identity source
 
 Mason Nguyen's professional roles and identity links are cross-referenced against his canonical [Coreweaver author profile](https://coreweaver.io/authors/mason-nguyen).
+
+
+## Reusable technical SEO operating procedure
+
+The portable, property-agnostic release procedure is documented in [`docs/TECHNICAL-SEO-OPERATING-PROCEDURE.md`](docs/TECHNICAL-SEO-OPERATING-PROCEDURE.md). It covers route manifests, canonical URLs, robots.txt, sitemap parity, default-follow internal links, hub-and-spoke authority architecture, structured data, image metadata, accessibility essentials, and the boundary between technical readiness and unmeasured ranking or Domain Authority outcomes.
+
+The project’s internal-link policy is documented in [`docs/internal-link-policy.md`](docs/internal-link-policy.md). Ordinary internal anchors are the default-follow standard. Do not add `rel="dofollow"`; do not add `nofollow`, `ugc`, or `sponsored` to normal internal navigation. Use those values only for a documented exception.
+
+Before publishing a property-wide change, run the reproducible checks below from the repository root:
+
+```bash
+node scripts/audit-live-site.mjs
+node scripts/audit-internal-link-policy.mjs
+```
+
+The checks should establish that every intended route is live or intentionally redirected, every important page is reachable through the internal graph, no orphan or over-deep routes remain, canonicals and sitemap URLs agree, intended pages are indexable, internal links are ordinary crawlable anchors, and no restricted link attributes appear without an approved reason. Preserve the JSON output and Markdown report with the release.
+
+### Current SEO baseline
+
+As of 2026-08-30, AI Mastery has 50 HTML routes, 50 live successful fetches, zero broken internal page links, zero orphan pages, zero routes beyond two clicks from home, zero sitemap gaps, zero image-alt gaps, zero restricted internal links, and zero baseline metadata or structured-data warnings. The live robots policy allows crawling and points to the sitemap.
+
+These checks describe technical structure only. They do not establish a Moz Domain Authority score, external referring-domain quality, rankings, citations, revenue, conversions, or learner outcomes. Those require independent measurement and ethical off-site authority work.
