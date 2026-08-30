@@ -27,7 +27,7 @@ const fetchPage = async (route) => {
 const results = [];
 for (const route of expected) results.push(await fetchPage(route));
 const routeSet = new Set(expected);
-const validResourceTargets = new Set(['/llms.txt', '/sitemap.xml', '/robots.txt', '/case-studies/ai-mastery-self-audit/ai-mastery-self-audit-evidence.md', '/case-studies/ai-mastery-self-audit/claim-register.json']);
+const validResourceTargets = new Set(['/llms.txt', '/sitemap.xml', '/robots.txt', '/case-studies/ai-mastery-self-audit/ai-mastery-self-audit-evidence.md', '/case-studies/ai-mastery-self-audit/claim-register.json', '/case-studies/arctura-network/claim-register.json']);
 const audit = results.map(({ route, status, html }) => {
   const links = [...html.matchAll(/<a\b[^>]*href=["']([^"']+)["'][^>]*>/gi)].map((m) => m[1]);
   const internal = links.map((h) => abs(h, route)).filter(Boolean);

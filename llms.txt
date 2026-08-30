@@ -183,6 +183,8 @@ AI Mastery sits at the intersection of artificial intelligence, knowledge system
 - Arctura Network — From Technical Proof to a Durable Public Idea: https://virtualmase.github.io/ai-mastery/case-studies/arctura-network/
   - A first-party working record dated 2026-08-30 about public positioning, plain-language information architecture, and preservation of the existing testnet evidence boundary.
   - The study records a design direction, not a deployed-redesign claim or measured reader, search, participation, or commercial outcome.
+  - Claim register: https://virtualmase.github.io/ai-mastery/case-studies/arctura-network/claim-register.json
+  - Correction route: https://github.com/virtualmase/ai-mastery/issues/new
 
 ## Author
 - Author profile: https://virtualmase.github.io/ai-mastery/author/
