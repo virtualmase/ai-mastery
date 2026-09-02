@@ -1,0 +1,52 @@
+{
+  "record": "arctura-network-field-study",
+  "reviewed": "2026-08-30",
+  "owner": "Mason Nguyen",
+  "claims": [
+    {
+      "id": "AN-01",
+      "class": "fact",
+      "statement": "Arctura publishes a bounded local Bittensor testnet record for netuid 505.",
+      "evidence": [
+        "https://arctura.network/documentation/netuid-505/",
+        "https://arctura.network/evidence/netuid-505/"
+      ],
+      "status": "observed"
+    },
+    {
+      "id": "AN-02",
+      "class": "fact",
+      "statement": "Arctura publishes an authority map identifying which public surface supports which claim.",
+      "evidence": ["https://arctura.network/authority/"],
+      "status": "observed"
+    },
+    {
+      "id": "AN-I01",
+      "class": "interpretation",
+      "statement": "The public story asks a general visitor to understand implementation machinery before the durable organizational idea.",
+      "evidence": ["https://arctura.network/"],
+      "status": "first-party interpretation"
+    },
+    {
+      "id": "AN-F01",
+      "class": "framework",
+      "statement": "Question, Evidence, Use is AI Mastery's curation model for deciding whether and how to publish a page.",
+      "evidence": ["https://github.com/virtualmase/ai-mastery/blob/main/docs/CONTENT-CURATION-STRATEGY.md"],
+      "status": "house framework"
+    },
+    {
+      "id": "AN-U01",
+      "class": "unknown",
+      "statement": "Reader comprehension, participation, search, citation, and commercial outcomes from the proposed redesign are unknown.",
+      "evidence": [],
+      "status": "held"
+    },
+    {
+      "id": "AN-U02",
+      "class": "unknown",
+      "statement": "The supplied wireframe does not establish that the proposed redesign has been deployed.",
+      "evidence": [],
+      "status": "held"
+    }
+  ]
+}

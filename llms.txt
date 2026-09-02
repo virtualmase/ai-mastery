@@ -171,10 +171,23 @@ AI Mastery sits at the intersection of artificial intelligence, knowledge system
 
 
 ## Field guides
+- Train Your Agent Playbook: https://virtualmase.github.io/ai-mastery/guides/train-your-agent-playbook/
+  - A dated decision guide comparing large and small language models, local and hosted inference, the open-weight tool stack, and prompting, retrieval, fine-tuning, and pretraining.
+  - Educational material only; it is not a vendor ranking or a workload-specific hosting recommendation.
 - Technical SEO and GEO Playbook: https://virtualmase.github.io/ai-mastery/guides/technical-seo-geo-playbook/
   - Source-backed field record of the crawlable authority graph, internal link policy, technical SEO procedure, GEO implications, reproducible audit, and portability method. Facts are sourced; interpretations are labeled; rankings, citations, and Domain Authority remain unknown.
 - Guides hub: https://virtualmase.github.io/ai-mastery/guides/
   - Public index of AI Mastery field guides for technical SEO, GEO, AI systems, and trust.
+
+## Field studies
+- Field Studies and Evidence Records hub: https://virtualmase.github.io/ai-mastery/case-studies/
+  - Collection of dated first-party working records that classify claims, expose evidence boundaries, preserve unknowns, and provide correction routes.
+  - The collection does not certify a client, product, system, strategy, or result.
+- Arctura Network — From Technical Proof to a Durable Public Idea: https://virtualmase.github.io/ai-mastery/case-studies/arctura-network/
+  - A first-party working record dated 2026-08-30 about public positioning, plain-language information architecture, and preservation of the existing testnet evidence boundary.
+  - The study records a design direction, not a deployed-redesign claim or measured reader, search, participation, or commercial outcome.
+  - Claim register: https://virtualmase.github.io/ai-mastery/case-studies/arctura-network/claim-register.json
+  - Correction route: https://github.com/virtualmase/ai-mastery/issues/new
 
 ## Author
 - Author profile: https://virtualmase.github.io/ai-mastery/author/

@@ -1,0 +1,58 @@
+name: Validate static site
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: validate-site-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  release-gates:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Validate route graph
+        run: node scripts/validate-site-graph.mjs
+
+      - name: Audit internal-link policy
+        run: node scripts/audit-internal-link-policy.mjs
+
+      - name: Validate editorial expansion
+        run: node scripts/validate-editorial-expansion.mjs
+
+      - name: Validate AURE experience
+        run: node scripts/validate-aure-remaster.mjs
+
+      - name: Validate publication index
+        run: node scripts/validate-publication-index.mjs
+
+      - name: Validate knowledge index and field records
+        run: |
+          node scripts/validate-knowledge-index.mjs
+          node scripts/validate-field-guide.mjs
+          node scripts/validate-self-audit.mjs
+
+      - name: Validate learning pathways
+        run: |
+          node scripts/validate-arm-pathway.mjs
+          node scripts/validate-trust-pathway.mjs
+          node scripts/validate-machine-readable-pathway.mjs
+          node scripts/validate-agentic-interoperability-pathway.mjs
+          node scripts/validate-economic-models-pathway.mjs
+
+      - name: Check patch whitespace
+        run: git diff --check
