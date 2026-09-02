@@ -45,6 +45,10 @@ Run `node scripts/validate-knowledge-index.mjs` to verify the connected domain a
 
 Mason Nguyen's professional roles and identity links are cross-referenced against his canonical [Coreweaver author profile](https://coreweaver.io/authors/mason-nguyen).
 
+## Contributing
+
+Evidence-backed corrections, implementation patterns, benchmark records, and case studies are welcome. Read [`CONTRIBUTING.md`](CONTRIBUTING.md) for the content, evidence, machine-readable metadata, and validation requirements.
+
 
 ## Reusable technical SEO operating procedure
 
