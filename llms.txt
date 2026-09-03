@@ -58,6 +58,10 @@ AI Mastery sits at the intersection of artificial intelligence, knowledge system
 
 ## Operator Learning
 
+- Executable Intent for AI Coding Agents: https://virtualmase.github.io/ai-mastery/executable-intent-ai-coding-agents/
+  - A practical field guide to architecture decision records, machine-checkable constraints, architectural fitness functions, evidence, and rollback paths for agentic software development.
+  - Companion to the virtualmase engineering judgment essay; it is a distinct implementation guide, not a duplicate or syndicated copy.
+
 - Agentic Commerce Operator Foundations: https://virtualmase.github.io/ai-mastery/learning/agentic-commerce-operator-foundations/
   - A practical lesson and scored scenario covering mandate, identity and signing, payment policy, settlement and fulfillment, and exception evidence.
   - Educational material only; it is not certification, production approval, legal delegation, or financial advice.
