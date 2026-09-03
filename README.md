@@ -25,6 +25,14 @@ That is the standard for this repository.
 
 **Public site:** https://virtualmase.github.io/ai-mastery/
 
+## Start here
+
+- Browse the [public site](https://virtualmase.github.io/ai-mastery/) for the main learning surface.
+- Use the [guides](https://virtualmase.github.io/ai-mastery/guides/) when you have a specific technical decision to make.
+- Follow the [AURE curriculum](https://virtualmase.github.io/ai-mastery/aure/) when you want a structured applied path.
+- Inspect the [publication directory](https://virtualmase.github.io/ai-mastery/directory/) when you want the complete route map.
+- Read [CONTRIBUTING.md](CONTRIBUTING.md) before proposing a source correction, case record, guide, or learning-path improvement.
+
 ## What mastery means here
 
 Knowing how to call a model is not mastery.
